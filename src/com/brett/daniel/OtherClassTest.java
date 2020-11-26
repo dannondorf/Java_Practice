@@ -8,17 +8,18 @@ class OtherClassTest {
     OtherClass other;
 
     @BeforeEach
-    public void beforeEach(){
+    public void beforeEach() {
         other = new OtherClass();
     }
 
     @AfterEach
-    public void afterEach(){
+    public void afterEach() {
         other = null;
     }
 
     @org.junit.jupiter.api.Test
     void helloWorld() {
-        assert(other.helloWorld()).equals("Hello World");
+
+        assert (other.helloWorld()).equals("Hello World");
     }
 }
